@@ -214,7 +214,7 @@ def llm_assess_and_prompt(unit: Unit) -> Dict[str, str]:
 
 # ===== API Endpoint =====
 @app.post("/assess-orderby-sort-strict")
-def assess_orderby_sort(units: List[Unit]) -> List[Dict[str, Any]]:
+async def assess_orderby_sort(units: List[Unit]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
     for u in units:
         if u.code:
