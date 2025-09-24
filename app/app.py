@@ -78,7 +78,8 @@ Instructions:
 2. For every finding containing a non-empty suggestion, add a bullet in "llm_prompt":
     - Use the "suggestion" field as the action text.
     - Do NOT include any "snippet" content in the output (use it only as background to refine the bullets).
-    - Maximum of 4 bullets.
+    - No Bullet point should be exact duplicate.
+    - Each Bullet point Should clearly explains , each action Item.
     - Skip any findings without a suggestion.
 Return valid JSON:
 {{
