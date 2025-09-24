@@ -77,7 +77,8 @@ Instructions:
 1. Write a summary ("assessment").
 2. For every finding containing a non-empty suggestion, add a bullet in "llm_prompt":
     - Use the "suggestion" field as the action text.
-    - If "snippet" (code) is present and non-empty, include it alongside the action (in-line).
+    - Do NOT include any "snippet" content in the output (use it only as background to refine the bullets).
+    - Maximum of 4 bullets.
     - Skip any findings without a suggestion.
 Return valid JSON:
 {{
